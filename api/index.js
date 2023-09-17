@@ -7,7 +7,7 @@ const app=express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://kirtaniariya10:kirtaniariya@cluster0.tp9792m.mongodb.net/Hospital?retryWrites=true&w=majority",{
+mongoose.connect(MONGO_DB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
